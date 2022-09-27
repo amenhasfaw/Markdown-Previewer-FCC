@@ -1,0 +1,63 @@
+const intialState = `This is a paragraph
+
+# Heading 1
+## Heading 2
+### Heading 3
+
+- Item 1
+- Item 2
+- Item 3
+
+[Google](google.com)
+[YouTube](youtube.com)
+
+This is a inline \`<div></div>\`
+
+This is a Block
+
+\`\`\`
+  let Num = 1;
+  let name = 'amen'
+  
+\`\`\`
+
+> Block Quote!
+
+**THIS IS BOLD**
+
+![THIS IS MARKDOWN](https://img.icons8.com/ios-filled/2x/markdown.png)
+`
+
+class App extends React.Component {
+  state = {
+    text: intialState
+  }
+  
+  handleChange = (e) => {
+      this.setState({
+        text: e.target.value
+      })
+  }
+  
+  render(){
+    const { text } = this.state;
+    
+    const markdown = marked(text, {breaks: true});
+    
+    return (
+    <div >
+        <h2 className="head text-center">Markdown Previewer</h2> 
+        <div className ="row">
+          <div className = "col-6 rounded">
+            <textarea className="form-control" id= "editor" value = {text} onChange={this.handleChange} placeholder ="Enter Markdown"/>
+          </div>        
+          <div className = "col-6 rounded preview" id="preview" p-3 dangerouslySetInnerHTML={{__html: markdown}}>
+           
+          </div>        
+        </div>
+    </div>
+    )
+  }
+}
+
+ReactDOM.render(<App/>, document.getElementById('root'))

@@ -1,0 +1,23 @@
+body{
+min-height:100vh;
+background: #272A5C;
+background: -webkit-linear-gradient(bottom, #272A5C, #13A9B5);
+background: -moz-linear-gradient(bottom, #272A5C, #13A9B5);
+background: linear-gradient(to top, #272A5C, #13A9B5);
+}
+
+.preview, #editor{
+  background-color: #ddffee;
+  height: 75vh;
+  margin-top: 30px;
+}
+.head {
+  margin-top: 10px;
+  font-weight:bold;
+  color: #000;
+}
+.preview {
+overflow:auto;
+padding-top: 10px;
+
+}
