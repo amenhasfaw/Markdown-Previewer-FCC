@@ -6,3 +6,7 @@ A React and Bootstrap-based Markdown Previewer app. This was completed as part o
 
 Created on CodePen.io. Original URL: [https://codepen.io/amenhasfaw/pen/VwxyXoV](https://codepen.io/amenhasfaw/pen/VwxyXoV).
 
+---
+
+![Screenshot](https://github.com/amenhasfaw/Markdown-Previewer-FCC/blob/master/Screenshot.png)
+
