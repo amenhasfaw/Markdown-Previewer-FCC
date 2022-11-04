@@ -1,6 +1,6 @@
 # Markdown Previewer
 
-A React and Bootstrap-based Markdown Previewer app. This was completed as part of FreeCodeCamp's Front End Development Libraries Project.
+A React and Bootstrap-based Markdown Previewer app. 
 
 ---
 
